@@ -1,0 +1,15 @@
+---
+ldap_server: ldaps://ldap.jumpcloud.com:636
+ldap_dn: uid=ldapuser,ou=Users,o={ldapaccountid},dc=jumpcloud,dc=com
+ldap_password: {password}
+
+ldap_base_search: ou=Users,o={ldapaccountid},dc=jumpcloud,dc=com
+ldap_user_filter: (objectClass=inetOrgPerson)
+
+# These are your tags in JumpCloud, or groups. Make sure to
+# select "Create Linux group for this tag" or the group won't show up
+ldap_group_filter: (objectClass=posixGroup)
+
+# These can be better explained at https://github.com/fullcontact/hesiod53/blob/master/example_users.yml
+hesiod_domain: {subdomain}.{yourdomain}.com
+route53_zone: {subdomain}.{yourdomain}.com
