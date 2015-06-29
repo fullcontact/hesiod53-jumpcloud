@@ -3,6 +3,8 @@
 Create a hesiod53 configuration file populated via jumpcloud. See the
 example_configuration.yml
 
+Only dumps users who have an SSH key.
+
 # Installation
 
 This library depends on python-ldap which requires installing some system libraries

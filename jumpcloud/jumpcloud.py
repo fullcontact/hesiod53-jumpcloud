@@ -1,7 +1,7 @@
 import sys
-import yaml
 import argparse
 
+import yaml
 import ldap
 
 
