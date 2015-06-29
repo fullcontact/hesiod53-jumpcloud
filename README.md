@@ -17,4 +17,4 @@ Now you can install this library
 
 # Usage
 
-jumpcloud myconfig.yml > myusers.yml
+`jumpcloud myconfig.yml > myusers.yml`

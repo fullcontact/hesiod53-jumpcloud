@@ -73,7 +73,8 @@ def main():
     parser = argparse.ArgumentParser(
         description="""
         Dump JumpCloud users and groups into yaml format for hesiod53.
-        USAGE:
+
+
         jumpcloud configfile > myusers.yml
         """
     )
