@@ -16,7 +16,7 @@ setup(
     long_description=readme,
     author='FullContact',
     author_email='ops+hesiod53@fullcontact.com',
-    url='https://github.com/fullcontact/OpsTools/hesiod53-jumpcloud',
+    url='https://github.com/fullcontact/hesiod53-jumpcloud',
     packages=find_packages(),
     include_package_data=True,
     install_requires=install_requires,
