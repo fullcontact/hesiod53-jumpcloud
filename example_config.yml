@@ -13,9 +13,3 @@ ldap_group_filter: (objectClass=posixGroup)
 # These can be better explained at https://github.com/fullcontact/hesiod53/blob/master/example_users.yml
 hesiod_domain: {subdomain}.{yourdomain}.com
 route53_zone: {subdomain}.{yourdomain}.com
-
-# if the username in jumpcloud does not match the desired unix username, then
-# this map will change the usernames and home directories as appropriate
-# this block is optional
-username_map:
-  jumpcloud_username: mapped_username

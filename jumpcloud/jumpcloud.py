@@ -68,17 +68,6 @@ class Parser(object):
                 return True
         return False
 
-# modifies usernames of the users using the username_map
-# if a username is not in the map, then the username is not modified
-def map_usernames(users, username_map):
-    for user in users:
-        username = user['username']
-        if username in username_map:
-            mapped_username = username_map[username]
-            # homedir is optional, username is not
-            user['username'] = mapped_username
-            if "homedir" in user:
-                user['homedir'] = user['homedir'].replace(username, mapped_username)
 
 def main():
     parser = argparse.ArgumentParser(
@@ -115,9 +104,6 @@ def main():
     parser = Parser(config)
     hesiod['users'] = parser.parse_all_users(groups, jumpcloud_users)
     hesiod['groups'] = parser.parse_all_groups(groups)
-
-    if "username_map" in config:
-        map_usernames(hesiod["users"], config["username_map"])
 
     print yaml.dump(hesiod)
 
