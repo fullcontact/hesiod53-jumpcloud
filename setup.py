@@ -5,7 +5,7 @@ from setuptools import setup, find_packages
 readme = open('README.md').read()
 
 install_requires = [
-    "pyyaml==3.11",
+    "pyyaml>=4.2b1",
     "python-ldap"
 ]
 
